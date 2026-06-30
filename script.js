@@ -46,3 +46,11 @@ selectedNumber[4] = 5
 
 console.log (selectedNumber);
 console.log (selectedNumber[3]);
+
+//function
+// function doesn't need a semicolon in the end of the line
+function square(number) {
+    return number * number;
+} 
+
+console.log (square(3));
