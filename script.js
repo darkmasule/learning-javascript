@@ -11,4 +11,10 @@ let name = 'Elite';
 // constant can't be change unlike variables. Use const if you don't want a variable to change
 const interestRate = 1
 
+//primitive/value tyeps: string, number, boolean, undefined, null
+let firstName = 'Alan'; // String literal, always use colon on string
+let age = 30; // Number literal
+let isApprove = true; // boolean literal
+let lastName; // Undefined literal
+let selectNo = null; // null literal, 0 value, use to clear values of a variable
 console.log (name);
