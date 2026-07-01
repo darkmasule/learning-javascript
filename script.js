@@ -47,10 +47,16 @@ selectedNumber[4] = 5
 console.log (selectedNumber);
 console.log (selectedNumber[3]);
 
-//function
+//function. Stores a code that can be use later
 // function doesn't need a semicolon in the end of the line
-function square(number) {
-    return number * number;
+function square(number) { // square is the name of the function and number is a parameter or a place holder for an input that's gonna be use inside the function
+    console.log(number * number)
 } 
 
-console.log (square(3));
+function sum(a, b) {
+  return a + b;
+}
+
+square(3)
+
+console.log(sum(3, 5))
