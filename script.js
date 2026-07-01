@@ -54,9 +54,21 @@ function square(number) { // square is the name of the function and number is a 
 } 
 
 function sum(a, b) {
-  return a + b;
+  return a + b; // when using return use semicolon in the end
 }
 
-square(3)
+const charOrigHP = 100
 
-console.log(sum(3, 5))
+function levelMod(level) {
+  return level * .50;
+}
+
+function equipStat(armor, shield) {
+  return armor + shield;
+}
+
+function currentHp() {
+  console.log(charOrigHP + levelMod(100) + equipStat(25, 10))
+}
+
+currentHp()
