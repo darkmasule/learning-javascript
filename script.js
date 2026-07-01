@@ -73,9 +73,14 @@ function currentHp() {
 
 currentHp()
 
-let customerAge = 23
-let todayIsTuesday = true
-let loyaltyCard = true
+// if statement
+// ! not, use to reverse a boolean, eg. monday = true, !monday = false
+// || or, only one statement needed to be true to run the code
+// &&, need both statement to be true to run the code
+
+let customerAge = 66
+let todayIsTuesday = false
+let loyaltyCard = false
 
 if(customerAge < 3) {
   console.log('Free')
@@ -93,7 +98,7 @@ if(customerAge < 3) {
   console.log('$8')
 } else if (customerAge <= 64) {
   console.log ('$10')
-} else if (customerAge <= 65 && loyaltyCard) {
+} else if (customerAge >= 65 && loyaltyCard) {
   console.log('$4')
 } else {
   console.log ('$6')
