@@ -68,7 +68,7 @@ function equipStat(armor, shield) {
 }
 
 function currentHp() {
-  console.log(charOrigHP + levelMod(100) + equipStat(25, 10))
+  console.log('The characters current hp is ' + (charOrigHP + levelMod(100) + equipStat(25, 10)))
 }
 
 currentHp()
