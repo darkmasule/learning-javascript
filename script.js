@@ -72,3 +72,29 @@ function currentHp() {
 }
 
 currentHp()
+
+let customerAge = 23
+let todayIsTuesday = true
+let loyaltyCard = true
+
+if(customerAge < 3) {
+  console.log('Free')
+} else if (todayIsTuesday) {
+  console.log('$5')
+} else if (customerAge <= 12 && loyaltyCard) {
+  console.log('$3')
+} else if (customerAge <= 12) {
+  console.log('$5')
+} else if (customerAge <= 17 && loyaltyCard) {
+  console.log('$5')
+} else if (customerAge <= 17) {
+  console.log ('$7')
+} else if (customerAge <= 64 && loyaltyCard) {
+  console.log('$8')
+} else if (customerAge <= 64) {
+  console.log ('$10')
+} else if (customerAge <= 65 && loyaltyCard) {
+  console.log('$4')
+} else {
+  console.log ('$6')
+}
