@@ -113,3 +113,15 @@ while (count >= 10) { // the code will continue to run while count is greater th
   console.log(count)
   count = count - 1 
 }
+
+//exercise for function and array
+
+let users = ['Alex', 'Tom', 'Josh', 'John']
+
+function signUp(username) {
+  return users.push(username)
+}
+
+signUp('Allan')
+
+console.log(users);
