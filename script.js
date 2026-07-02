@@ -77,6 +77,7 @@ currentHp()
 // ! not, use to reverse a boolean, eg. monday = true, !monday = false
 // || or, only one statement needed to be true to run the code
 // &&, need both statement to be true to run the code
+// Example of using two if conditions in a same line; if (customerAge = 12 || customerAge = 20) {}
 
 let customerAge = 66
 let todayIsTuesday = false
@@ -102,4 +103,13 @@ if(customerAge < 3) {
   console.log('$4')
 } else {
   console.log ('$6')
+}
+
+//While, the code will continue to run while the condition inside the parenthesis is true
+
+let count = 20
+
+while (count >= 10) { // the code will continue to run while count is greater than 10
+  console.log(count)
+  count = count - 1 
 }
