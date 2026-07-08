@@ -17,19 +17,22 @@ atcButton.addEventListener("click", () => {
 const twoButton = document.getElementById("plus2");
 
 twoButton.addEventListener("click", () => {
-    console.log(cartQuantity);
+    cartQuantity = cartQuantity + 2
+    console.log('Cart quantity: ' + cartQuantity);
 });
 
 const threeButton = document.getElementById("plus3");
 
 threeButton.addEventListener("click", () => {
-    console.log(cartQuantity);
+    cartQuantity = cartQuantity + 3
+    console.log('Cart quantity: ' + cartQuantity);
 });
 
 const resetButton = document.getElementById("reset");
 
 resetButton.addEventListener("click", () => {
     cartQuantity = cartQuantity * 0
+    console.log('Cart was reset');
     console.log('Cart quantity: ' + cartQuantity);
 });
 
