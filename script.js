@@ -124,4 +124,6 @@ function signUp(username) {
 
 signUp('Allan')
 
+
+
 console.log(users);
