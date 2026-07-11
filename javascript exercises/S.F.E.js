@@ -36,5 +36,17 @@ resetButton.addEventListener("click", () => {
     console.log('Cart quantity: ' + cartQuantity);
 });
 
-
 //addtocart
+
+//health
+let userHealth = 100;
+
+const plus10Button = document.getElementById("health10");
+
+plus10Button.addEventListener("click", () => {
+    userHealth = userHealth + 10
+    console.log(maxHealth)
+})
+
+
+//health
