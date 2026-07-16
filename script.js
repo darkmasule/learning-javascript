@@ -105,6 +105,12 @@ if(customerAge < 3) {
   console.log ('$6')
 }
 
+//Ternary operator, shortcut ver of if statement
+
+//const result = true ? 'truthy' : 'falsy'
+
+//console.log(result);
+
 //While, the code will continue to run while the condition inside the parenthesis is true
 
 let count = 20
