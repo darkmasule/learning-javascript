@@ -49,6 +49,7 @@ console.log (selectedNumber[3]);
 
 //function. Stores a code that can be use later
 // function doesn't need a semicolon in the end of the line
+// you can call another function inside of a function
 function square(number) { // square is the name of the function and number is a parameter or a place holder for an input that's gonna be use inside the function
     console.log(number * number)
 } 
@@ -115,10 +116,10 @@ if(customerAge < 3) {
 
 let count = 20
 
-while (count >= 10) { // the code will continue to run while count is greater than 10
-  console.log(count)
-  count = count - 1 
-}
+//while (count >= 10) { // the code will continue to run while count is greater than 10
+//  console.log(count)
+//  count = count - 1 
+//}
 
 //exercise for function and array
 
@@ -130,6 +131,21 @@ function signUp(username) {
 
 signUp('Allan')
 
-
-
 console.log(users);
+
+//Parameter is the opposite of return. Return gets a value out of a function while a parameters puts a value in a function. You can have multiple parameters in a single function
+function calculateTax(beforeTax) {
+  let calculatedTax = beforeTax * 0.1
+  return calculatedTax
+}
+
+console.log(calculateTax(1000));
+console.log(calculateTax(2000));
+
+function personName(firstName, lastName) {
+  console.log('Hello ' + firstName + ' ' + lastName);
+}
+
+personName('Jace', 'Lannis')
+personName('Jace', 'Low')
+
