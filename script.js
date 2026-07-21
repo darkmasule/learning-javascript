@@ -32,12 +32,29 @@ let firstPerson = {
 //dot notation
 firstPerson.firstName = 'John'; // this is to change the property firstName of the object firstPerson
 
-//bracket notanion
+//bracket notanion. Bracket notation lets us use a properties that don't work on dot notation
 firstPerson['lastName'] = 'Alan';
+firstPerson['A-A'] = 1; //the property A-A won't work on dot notation because of the dash sign, the javascript thinks that the dash sign is a minus sign. Bracket notation also allows you to store a variable in an object
 
 console.log (firstPerson);
 console.log (firstPerson.age);
 
+//Nested Object is when an object is inside of another object
+//Method, storing a function inside an object
+
+let shirtProduct = {
+  color: 'red',
+  ratings: {
+    stars: 4.5,
+    count: 87
+  },
+  fun: function ratedBy(userName) {
+    console.log(`this rating is made by ${userName}`);
+  }
+};
+
+// console.log(shirtProduct.ratings.count);
+// console.log(shirtProduct.fun('Allan'))
 //arrays. use to present a list of items
 // arrays use square brackets
 // index determine the position of the item in the list, it starts with zero, index use to access items on the array

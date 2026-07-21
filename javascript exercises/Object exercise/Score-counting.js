@@ -13,11 +13,7 @@ function pickComputerMove() {
     return computerMove;
 }
 
-let score = {
-    wins: 0,
-    loses: 0,
-    ties: 0
-}
+let score = JSON.parse(localStorage.getItem('score'));
 
 function playRPS(playerMove, computerMove) {
 
@@ -50,6 +46,8 @@ function playRPS(playerMove, computerMove) {
     } else if (result === 'its a tie') {
         score.ties += 1
     }
+
+    localStorage.setItem('score', JSON.stringify(score));
 
     alert(`You pick ${playerMove}. Computer pick ${computerMove}. ${result}.
         Wins: ${score.wins} Loses: ${score.loses} Ties: ${score.ties} `);
@@ -93,3 +91,4 @@ resetScore.addEventListener("click", () => {
 
 alert(`Wins: ${score.wins} Loses: ${score.loses} Ties: ${score.ties}`)
 })
+

@@ -1,0 +1,51 @@
+//reference type: object, array, function
+
+// object literal. use curly braces
+// key is the properties of the object
+let firstPerson = {
+    firstName: 'Josh',
+    lastName: 'Kellen',
+    age: 25
+};
+
+//ways to access the object
+//dot notation
+
+firstPerson.firstName = 'John'; // this is to change the property firstName of the object firstPerson
+
+//bracket notanion. Bracket notation lets us use a properties that don't work on dot notation
+firstPerson['lastName'] = 'Alan';
+firstPerson['A-A'] = 1; //the property A-A won't work on dot notation because of the dash sign, the javascript thinks that the dash sign is a minus sign. Bracket notation also allows you to store a variable in an object
+
+console.log (firstPerson);
+console.log (firstPerson.age);
+
+//Nested Object is when an object is inside of another object
+//Method, storing a function inside an object
+
+let shirtProduct = {
+  color: 'red',
+  ratings: {
+    stars: 4.5,
+    count: 87
+  },
+  fun: function ratedBy(userName) {
+    console.log(`this rating is made by ${userName}`);
+  }
+}
+
+console.log(shirtProduct.ratings.count);
+console.log(shirtProduct.fun('Allan'))
+
+//Build-in object
+//JSON, similar to javascript but has less features, JSON doesn't have function. Can be understood by almost every programming language, JSON is use to send data between computers and to store data
+
+JSON.stringify(shirtProduct) //this code convert javascript code into JSON
+const jsonString = JSON.stringify(shirtProduct)
+
+JSON.parse(jsonString) // this code convert JSON code to javascript
+
+//localStorage is use to store data in localStorage instead of a variables since variables are temporary, data store in varialbes gets deleted if the page is refresh
+localStorage.setItem('message', 'hello'); //localStorage can only supports string. The first string is called name, this is how we access the value that is saved for later. The second string is the value we want to save in the local storage
+
+localStorage.getItem('message'); //getItem is use to retrieve a value stored in the local storage
